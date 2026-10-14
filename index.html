@@ -1,0 +1,1865 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+
+	<title>Hotel Fernanda | Lujo & Elegancia</title>
+
+	<meta charset="utf-8" />
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+
+	<style>
+
+		/* =====================================================
+		   HOTEL FERNANDA
+		   DISEÑO DE LUJO
+		===================================================== */
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			background: #0b0b0b;
+			color: #eeeeee;
+		}
+
+		#wrapper {
+			background: #0b0b0b;
+		}
+
+		/* ================= HEADER ================= */
+
+		#header {
+			background: rgba(8, 8, 8, 0.96);
+			border-bottom: 1px solid rgba(214,179,106,0.25);
+		}
+
+		.logo .title {
+			color: #d6b36a;
+			font-size: 1.2em;
+			letter-spacing: 3px;
+		}
+
+		/* ================= HERO ================= */
+
+		.hero {
+			min-height: 720px;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			text-align: center;
+
+			background:
+				linear-gradient(
+					rgba(0,0,0,0.30),
+					rgba(0,0,0,0.78)
+				),
+				url("cabaña.jpg")
+				center/cover no-repeat;
+
+			background-attachment: fixed;
+		}
+
+		.hero-content {
+			max-width: 950px;
+			padding: 50px;
+		}
+
+		.welcome {
+			color: #d6b36a !important;
+			font-size: 0.9em !important;
+			font-weight: bold;
+			letter-spacing: 6px;
+			margin-bottom: 15px;
+		}
+
+		.hero h1 {
+			color: white;
+			font-size: 5em;
+			letter-spacing: 10px;
+			margin-bottom: 20px;
+			text-shadow: 0 4px 20px #000;
+		}
+
+		.hero h1 span {
+			color: #d6b36a;
+		}
+
+		.hero-description {
+			color: white !important;
+			font-size: 1.25em !important;
+			line-height: 1.8;
+			margin: 0 auto 20px;
+			max-width: 750px;
+		}
+
+		/* ================= UBICACIÓN ================= */
+
+		.location {
+			color: #d6b36a;
+			font-size: 1.05em;
+			font-weight: bold;
+			letter-spacing: 2px;
+			margin-bottom: 35px;
+		}
+
+		/* ================= BOTONES ================= */
+
+		.gold-button {
+			display: inline-block;
+
+			padding: 16px 35px;
+
+			background: #d6b36a;
+			color: #111 !important;
+
+			font-weight: bold;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+
+			border-radius: 3px;
+
+			transition: all 0.3s ease;
+		}
+
+		.gold-button:hover {
+			background: #f0d18a;
+			transform: translateY(-4px);
+		}
+
+		/* ================= INTRO ================= */
+
+		.intro {
+			max-width: 900px;
+			margin: 100px auto;
+			text-align: center;
+		}
+
+		.intro h2 {
+			color: #d6b36a;
+			font-size: 2.7em;
+			letter-spacing: 2px;
+			margin-bottom: 25px;
+		}
+
+		.intro p {
+			color: #c5c5c5;
+			font-size: 1.1em;
+			line-height: 1.9;
+		}
+
+		/* ================= TITULOS ================= */
+
+		.section-title {
+			text-align: center;
+			margin: 90px 0 45px;
+		}
+
+		.section-title span {
+			color: #d6b36a;
+			font-size: 0.8em;
+			font-weight: bold;
+			letter-spacing: 5px;
+		}
+
+		.section-title h2 {
+			color: white;
+			font-size: 2.7em;
+			margin-top: 10px;
+		}
+
+		/* ================= TARJETAS ================= */
+
+		.tiles article {
+			border-radius: 8px;
+			overflow: hidden;
+			transition: transform 0.4s ease;
+		}
+
+		.tiles article:hover {
+			transform: translateY(-8px);
+		}
+
+		.tiles article h2 {
+			color: white;
+			text-shadow: 0 3px 8px #000;
+		}
+
+		.tiles article .content p {
+			color: white;
+		}
+
+		/* ================= RESTAURANTE ================= */
+
+		.gastronomia {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			min-height: 620px;
+
+			margin: 110px 0;
+
+			background: #151515;
+		}
+
+		.gastronomia-image {
+			overflow: hidden;
+		}
+
+		.gastronomia-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+
+			transition: transform 0.7s ease;
+		}
+
+		.gastronomia-image:hover img {
+			transform: scale(1.06);
+		}
+
+		.gastronomia-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			padding: 75px;
+		}
+
+		.small-title {
+			color: #d6b36a !important;
+			font-size: 0.85em !important;
+			font-weight: bold;
+			letter-spacing: 5px;
+		}
+
+		.gastronomia-text h2 {
+			color: white;
+			font-size: 3.2em;
+			line-height: 1.15;
+			margin: 20px 0;
+		}
+
+		.gastronomia-text p:not(.small-title) {
+			color: #bdbdbd;
+			font-size: 1.05em;
+			line-height: 1.9;
+		}
+
+		/* ================= RESTAURANTE GRANDE ================= */
+
+		.food-card {
+			position: relative;
+
+			height: 570px;
+
+			margin: 110px 0;
+
+			overflow: hidden;
+
+			border-radius: 8px;
+		}
+
+		.food-card-image {
+			position: absolute;
+			inset: 0;
+		}
+
+		.food-card-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.food-card-content {
+			position: absolute;
+			inset: 0;
+
+			display: flex;
+			flex-direction: column;
+
+			align-items: center;
+			justify-content: center;
+
+			text-align: center;
+
+			padding: 40px;
+
+			background: rgba(0,0,0,0.58);
+		}
+
+		.food-card-content span {
+			color: #d6b36a;
+			font-weight: bold;
+			letter-spacing: 5px;
+		}
+
+		.food-card-content h2 {
+			color: white;
+			font-size: 4em;
+			margin: 20px 0;
+		}
+
+		.food-card-content p {
+			max-width: 700px;
+			color: white;
+			font-size: 1.15em;
+			line-height: 1.8;
+			margin-bottom: 30px;
+		}
+
+		/* ================= SERVICIOS ================= */
+
+		.services {
+			padding: 90px 30px;
+
+			background:
+				linear-gradient(
+					rgba(20,20,20,0.96),
+					rgba(20,20,20,0.96)
+				);
+
+			text-align: center;
+		}
+
+		.services h2 {
+			color: #d6b36a;
+			font-size: 2.7em;
+		}
+
+		.services-intro {
+			color: #aaa;
+			max-width: 700px;
+			margin: 20px auto 50px;
+		}
+
+		.service-grid {
+			display: grid;
+
+			grid-template-columns:
+				repeat(4, 1fr);
+
+			gap: 25px;
+
+			max-width: 1150px;
+
+			margin: auto;
+		}
+
+		.service {
+			padding: 35px 20px;
+
+			background: #0d0d0d;
+
+			border: 1px solid #292929;
+
+			border-radius: 7px;
+
+			transition: 0.3s;
+		}
+
+		.service:hover {
+			border-color: #d6b36a;
+			transform: translateY(-6px);
+		}
+
+		.service-icon {
+			font-size: 2.7em;
+			margin-bottom: 15px;
+		}
+
+		.service h3 {
+			color: #d6b36a;
+		}
+
+		.service p {
+			color: #999;
+			line-height: 1.6;
+		}
+
+		/* ================= GALERÍA ================= */
+
+		.gallery {
+			margin: 110px 0;
+		}
+
+		.gallery-grid {
+			display: grid;
+
+			grid-template-columns:
+				repeat(3, 1fr);
+
+			gap: 12px;
+		}
+
+		.gallery-item {
+			height: 280px;
+			overflow: hidden;
+		}
+
+		.gallery-item img {
+			width: 100%;
+			height: 100%;
+
+			object-fit: cover;
+
+			transition: transform 0.6s ease;
+		}
+
+		.gallery-item:hover img {
+			transform: scale(1.08);
+		}
+
+		/* ================= VIDEO ================= */
+
+		.video-section {
+			margin: 110px 0;
+			text-align: center;
+		}
+
+		.video-container {
+			width: 600px;
+			height: 600px;
+			max-width: 90%;
+			margin: 0 auto;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+			border: 1px solid rgba(214,179,106,0.25);
+		}
+
+		.video-container video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+
+		/* ================= EXPERIENCIA ================= */
+
+		.experience {
+			padding: 100px 30px;
+
+			text-align: center;
+
+			background:
+				linear-gradient(
+					rgba(0,0,0,0.75),
+					rgba(0,0,0,0.75)
+				),
+				url("sitio 1.jpg")
+				center/cover fixed;
+		}
+
+		.experience h2 {
+			color: #d6b36a;
+			font-size: 3em;
+		}
+
+		.experience p {
+			max-width: 750px;
+			margin: 20px auto 35px;
+
+			color: white;
+
+			line-height: 1.9;
+			font-size: 1.1em;
+		}
+
+		/* ================= RESERVACIÓN ================= */
+
+		.reservation {
+			padding: 100px 30px;
+
+			text-align: center;
+
+			background:
+				linear-gradient(
+					rgba(0,0,0,0.72),
+					rgba(0,0,0,0.72)
+				),
+				url("sitio 1.jpg")
+				center/cover;
+		}
+
+		.reservation h2 {
+			color: #d6b36a;
+			font-size: 3em;
+		}
+
+		.reservation p {
+			color: white;
+			font-size: 1.1em;
+			margin-bottom: 35px;
+		}
+
+		/* ================= FORMULARIO ================= */
+
+		#footer {
+			background: #070707;
+		}
+
+		#footer h2 {
+			color: #d6b36a;
+		}
+
+		#footer p {
+			color: #999;
+		}
+
+		/* ================= MENÚ DE COMIDAS ================= */
+
+		#menu-comidas {
+			display: none;
+			margin: 110px 0;
+		}
+
+		#menu-comidas.active {
+			display: block;
+		}
+
+		.menu-comidas-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+			margin-top: 40px;
+		}
+
+		.menu-comida {
+			background: #111;
+			border: 1px solid #292929;
+			border-radius: 8px;
+			overflow: hidden;
+			transition: 0.3s;
+		}
+
+		.menu-comida:hover {
+			border-color: #d6b36a;
+			transform: translateY(-6px);
+		}
+
+		.menu-comida img {
+			width: 100%;
+			height: 220px;
+			object-fit: cover;
+			display: block;
+		}
+
+		.menu-comida-info {
+			padding: 25px 20px;
+		}
+
+		.menu-comida-info h3 {
+			color: #d6b36a;
+			font-size: 1.3em;
+			margin-bottom: 10px;
+			letter-spacing: 1px;
+		}
+
+		.menu-comida-info p {
+			color: #bdbdbd;
+			font-size: 0.95em;
+			line-height: 1.6;
+			margin-bottom: 15px;
+		}
+
+		.menu-comida-info .precio {
+			color: #fff;
+			font-weight: bold;
+			font-size: 1.1em;
+			letter-spacing: 1px;
+		}
+
+		/* ================= RESPONSIVE ================= */
+
+		@media screen and (max-width: 980px) {
+
+			.hero h1 {
+				font-size: 3.5em;
+			}
+
+			.service-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			.gastronomia {
+				grid-template-columns: 1fr;
+			}
+
+			.gastronomia-image {
+				height: 450px;
+			}
+
+			.gallery-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			.menu-comidas-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+
+			.hero {
+				min-height: 600px;
+				background-attachment: scroll;
+			}
+
+			.hero-content {
+				padding: 25px;
+			}
+
+			.hero h1 {
+				font-size: 2.3em;
+				letter-spacing: 5px;
+			}
+
+			.hero-description {
+				font-size: 1em !important;
+			}
+
+			.service-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.gallery-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.gastronomia-text {
+				padding: 45px 25px;
+			}
+
+			.gastronomia-text h2 {
+				font-size: 2.3em;
+			}
+
+			.food-card-content h2 {
+				font-size: 2.5em;
+			}
+
+			.menu-comidas-grid {
+				grid-template-columns: 1fr;
+			}
+
+		}
+
+	</style>
+
+</head>
+
+
+<body class="is-preload">
+
+
+<div id="wrapper">
+
+
+	<!-- ==================================================
+	     HEADER
+	================================================== -->
+
+	<header id="header">
+
+		<div class="inner">
+
+			<a href="index.html" class="logo">
+
+				<span class="symbol">
+					<img src="images/logo.svg"
+						 alt="Hotel Fernanda" />
+				</span>
+
+				<span class="title">
+					HOTEL FERNANDA
+				</span>
+
+			</a>
+
+
+			<nav>
+
+				<ul>
+					<li>
+						<a href="#menu">Menú</a>
+					</li>
+				</ul>
+
+			</nav>
+
+		</div>
+
+	</header>
+
+
+	<!-- ==================================================
+	     MENÚ
+	================================================== -->
+
+	<nav id="menu">
+
+		<h2>Hotel Fernanda</h2>
+
+		<ul>
+
+			<li>
+				<a href="index.html">Inicio</a>
+			</li>
+
+			<li>
+				<a href="#habitaciones">Habitaciones</a>
+			</li>
+
+			<li>
+				<a href="#gastronomia">Restaurante</a>
+			</li>
+
+			<li>
+				<a href="#servicios">Servicios</a>
+			</li>
+
+			<li>
+				<a href="#galeria">Galería</a>
+			</li>
+
+			<li>
+				<a href="#video">Video</a>
+			</li>
+
+			<li>
+				<a href="#reservaciones">Reservaciones</a>
+			</li>
+
+			<li>
+				<a href="#contacto">Contacto</a>
+			</li>
+
+		</ul>
+
+	</nav>
+
+
+	<!-- ==================================================
+	     HERO
+	================================================== -->
+
+	<section class="hero">
+
+		<div class="hero-content">
+
+			<p class="welcome">
+				BIENVENIDO A
+			</p>
+
+			<h1>
+				HOTEL <span>FERNANDA</span>
+			</h1>
+
+			<p class="hero-description">
+
+				Lujo, comodidad y elegancia
+				en un lugar creado para disfrutar
+				cada momento.
+
+			</p>
+
+			<p class="location">
+				📍 Omoa, Honduras
+			</p>
+
+			<a href="#reservaciones"
+			   class="gold-button">
+
+				RESERVAR AHORA
+
+			</a>
+
+		</div>
+
+	</section>
+
+
+	<!-- ==================================================
+	     CONTENIDO PRINCIPAL
+	================================================== -->
+
+	<div id="main">
+
+		<div class="inner">
+
+
+			<!-- INTRO -->
+
+			<section class="intro">
+
+				<h2>
+					Una experiencia extraordinaria
+				</h2>
+
+				<p>
+
+					En <strong>Hotel Fernanda</strong>
+					cada detalle ha sido pensado para ofrecer
+					una experiencia de descanso, elegancia
+					y comodidad.
+
+				</p>
+
+				<p>
+
+					Disfruta de nuestras habitaciones exclusivas,
+					gastronomía, spa, piscina, jardines y servicios
+					personalizados.
+
+				</p>
+
+			</section>
+
+
+			<!-- ==================================================
+			     HABITACIONES
+			================================================== -->
+
+			<section id="habitaciones">
+
+
+				<div class="section-title">
+
+					<span>
+						DESCANSO & CONFORT
+					</span>
+
+					<h2>
+						Habitaciones y Suites
+					</h2>
+
+				</div>
+
+
+				<section class="tiles">
+
+
+					<article class="style1">
+
+						<span class="image">
+
+							<img
+								src="foto 3.jpg"
+								alt="Habitación Deluxe"
+							/>
+
+						</span>
+
+						<a href="#reservaciones">
+
+							<h2>
+								Habitación Deluxe
+							</h2>
+
+							<div class="content">
+
+								<p>
+									Comodidad y elegancia
+									para una estancia perfecta.
+								</p>
+
+							</div>
+
+						</a>
+
+					</article>
+
+
+					<article class="style2">
+
+						<span class="image">
+
+							<img
+								src="suite ejecutiva.jpg"
+								alt="Suite Ejecutiva"
+							/>
+
+						</span>
+
+						<a href="#reservaciones">
+
+							<h2>
+								Suite Ejecutiva
+							</h2>
+
+							<div class="content">
+
+								<p>
+									Amplios espacios y
+									servicios exclusivos.
+								</p>
+
+							</div>
+
+						</a>
+
+					</article>
+
+
+					<article class="style3">
+
+						<span class="image">
+
+							<img
+								src="suite precidencial.jpg"
+								alt="Suite Presidencial"
+							/>
+
+						</span>
+
+						<a href="#reservaciones">
+
+							<h2>
+								Suite Presidencial
+							</h2>
+
+							<div class="content">
+
+								<p>
+									La máxima expresión
+									de lujo y privacidad.
+								</p>
+
+							</div>
+
+						</a>
+
+					</article>
+
+
+					<article class="style4">
+
+						<span class="image">
+
+							<img
+								src="piscina.jpeg"
+								alt="Piscina Infinity"
+							/>
+
+						</span>
+
+						<a href="#servicios">
+
+							<h2>
+								Piscina Infinity
+							</h2>
+
+							<div class="content">
+
+								<p>
+									Relájate disfrutando
+									de un ambiente exclusivo.
+								</p>
+
+							</div>
+
+						</a>
+
+					</article>
+
+
+					<article class="style5">
+
+						<span class="image">
+
+							<img
+								src="restaurante.jpg"
+								alt="Restaurante"
+							/>
+
+						</span>
+
+						<a href="#gastronomia">
+
+							<h2>
+								Restaurante
+							</h2>
+
+							<div class="content">
+
+								<p>
+									Alta gastronomía
+									en un ambiente sofisticado.
+								</p>
+
+							</div>
+
+						</a>
+
+					</article>
+
+
+					<article class="style6">
+
+						<span class="image">
+
+							<img
+								src="masaje.avif"
+								alt="Spa"
+							/>
+
+						</span>
+
+						<a href="#servicios">
+
+							<h2>
+								Spa & Wellness
+							</h2>
+
+							<div class="content">
+
+								<p>
+									Un espacio dedicado
+									al bienestar y relajación.
+								</p>
+
+							</div>
+
+						</a>
+
+					</article>
+
+
+				</section>
+
+			</section>
+
+
+			<!-- ==================================================
+			     RESTAURANTE
+			================================================== -->
+
+			<section id="gastronomia"
+					 class="gastronomia">
+
+
+				<div class="gastronomia-image">
+
+					<img
+						src="comida2.jpg"
+						alt="Restaurante de lujo"
+					/>
+
+				</div>
+
+
+				<div class="gastronomia-text">
+
+					<p class="small-title">
+						EXPERIENCIA GASTRONÓMICA
+					</p>
+
+					<h2>
+						Sabores que
+						despiertan
+						los sentidos
+					</h2>
+
+					<p>
+
+						Descubre un restaurante diseñado
+						para convertir cada comida en
+						un momento especial.
+
+					</p>
+
+					<p>
+
+						Desde desayunos tranquilos hasta
+						cenas románticas, nuestro espacio
+						combina gastronomía, elegancia
+						y un ambiente inolvidable.
+
+					</p>
+
+					<a href="#contacto"
+					   class="gold-button">
+
+						CONOCER RESTAURANTE
+
+					</a>
+
+				</div>
+
+			</section>
+
+
+			<!-- ==================================================
+			     RESTAURANTE DESTACADO
+			================================================== -->
+
+			<section class="food-card">
+
+				<div class="food-card-image">
+
+					<img
+						src="comoda1.jpg"
+						alt="Alta gastronomía"
+					/>
+
+				</div>
+
+
+				<div class="food-card-content">
+
+					<span>
+						RESTAURANTE FERNANDA
+					</span>
+
+					<h2>
+						Alta gastronomía
+					</h2>
+
+					<p>
+
+						Una combinación de sabor,
+						elegancia y atención personalizada
+						para disfrutar cada momento.
+
+					</p>
+
+					<a href="#menu-comidas"
+					   class="gold-button"
+					   id="btn-ver-menu">
+
+						VER MENÚ
+
+					</a>
+
+				</div>
+
+			</section>
+
+
+			<!-- ==================================================
+			     MENÚ DE COMIDAS
+			     (AQUÍ PONES EL NOMBRE DE TUS FOTOS)
+			================================================== -->
+
+			<section id="menu-comidas">
+
+				<div class="section-title">
+
+					<span>
+						NUESTRA CARTA
+					</span>
+
+					<h2>
+						Menú del Restaurante
+					</h2>
+
+				</div>
+
+				<div class="menu-comidas-grid">
+
+					<div class="menu-comida">
+						<img src="COMIDA1.webp" alt="Platillo 1" />
+						<div class="menu-comida-info">
+							<h3>Filete de Res en Salsa de Trufa</h3>
+							<p>Descripción breve del platillo.</p>
+							<span class="precio">L. 600.00</span>
+						</div>
+					</div>
+
+					<div class="menu-comida">
+						<img src="salmon.jpg" alt="Platillo 2" />
+						<div class="menu-comida-info">
+							<h3>Salmón a la Mantequilla de Limón</h3>
+							<p>Descripción breve del platillo.</p>
+							<span class="precio">L. 700.00</span>
+						</div>
+					</div>
+
+					<div class="menu-comida">
+						<img src="Risotto.jpg" alt="Platillo 3" />
+						<div class="menu-comida-info">
+							<h3>Risotto de Hongos Silvestres</h3>
+							<p>Descripción breve del platillo.</p>
+							<span class="precio">L. 650.00</span>
+						</div>
+					</div>
+
+					<div class="menu-comida">
+						<img src="langosta.jpg" alt="Platillo 4" />
+						<div class="menu-comida-info">
+							<h3>Langosta Thermidor</h3>
+							<p>Descripción breve del platillo.</p>
+							<span class="precio">L. 900.00</span>
+						</div>
+					</div>
+
+					<div class="menu-comida">
+						<img src="pato.jpg" alt="Platillo 5" />
+						<div class="menu-comida-info">
+							<h3>Pato Confitado con Salsa de Naranja</h3>
+							<p>Descripción breve del platillo.</p>
+							<span class="precio">L. 800.00</span>
+						</div>
+					</div>
+
+					<div class="menu-comida">
+						<img src="medallon.jpg" alt="Platillo 6" />
+						<div class="menu-comida-info">
+							<h3>Medallones de Cerdo en Reducción de Vino Tinto</h3>
+							<p>Descripción breve del platillo.</p>
+							<span class="precio">L. 600.00</span>
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<!-- ==================================================
+			     SERVICIOS
+			================================================== -->
+
+			<section id="servicios"
+					 class="services">
+
+				<h2>
+					Servicios exclusivos
+				</h2>
+
+				<p class="services-intro">
+
+					Todo lo que necesitas para disfrutar
+					una estancia cómoda, relajante
+					y memorable.
+
+				</p>
+
+
+				<div class="service-grid">
+
+
+					<div class="service">
+
+						<div class="service-icon">
+							🛎️
+						</div>
+
+						<h3>
+							Recepción 24/7
+						</h3>
+
+						<p>
+							Atención disponible durante
+							todo el día.
+						</p>
+
+					</div>
+
+
+					<div class="service">
+
+						<div class="service-icon">
+							🏊
+						</div>
+
+						<h3>
+							Piscina Infinity
+						</h3>
+
+						<p>
+							Un espacio perfecto
+							para relajarte.
+						</p>
+
+					</div>
+
+
+					<div class="service">
+
+						<div class="service-icon">
+							💆
+						</div>
+
+						<h3>
+							Spa & Wellness
+						</h3>
+
+						<p>
+							Tratamientos para
+							tu bienestar.
+						</p>
+
+					</div>
+
+
+					<div class="service">
+
+						<div class="service-icon">
+							🍽️
+						</div>
+
+						<h3>
+							Gastronomía
+						</h3>
+
+						<p>
+							Platos preparados
+							con dedicación.
+						</p>
+
+					</div>
+
+
+					<div class="service">
+
+						<div class="service-icon">
+							🚗
+						</div>
+
+						<h3>
+							Transporte
+						</h3>
+
+						<p>
+							Servicio de transporte
+							para huéspedes.
+						</p>
+
+					</div>
+
+
+					<div class="service">
+
+						<div class="service-icon">
+							📶
+						</div>
+
+						<h3>
+							Wi-Fi Premium
+						</h3>
+
+						<p>
+							Conexión rápida
+							en todo el hotel.
+						</p>
+
+					</div>
+
+
+					<div class="service">
+
+						<div class="service-icon">
+							🛏️
+						</div>
+
+						<h3>
+							Room Service
+						</h3>
+
+						<p>
+							Disfruta nuestros servicios
+							en tu habitación.
+						</p>
+
+					</div>
+
+
+					<div class="service">
+
+						<div class="service-icon">
+							💎
+						</div>
+
+						<h3>
+							Servicio VIP
+						</h3>
+
+						<p>
+							Atención personalizada
+							y exclusiva.
+						</p>
+
+					</div>
+
+
+				</div>
+
+			</section>
+
+
+			<!-- ==================================================
+			     GALERÍA
+			================================================== -->
+
+			<section id="galeria"
+					 class="gallery">
+
+
+				<div class="section-title">
+
+					<span>
+						DESCUBRE NUESTROS ESPACIOS
+					</span>
+
+					<h2>
+						Galería
+					</h2>
+
+				</div>
+
+
+				<div class="gallery-grid">
+
+
+					<div class="gallery-item">
+
+						<img
+							src="hotel1.avif"
+							alt="Hotel"
+						/>
+
+					</div>
+
+
+					<div class="gallery-item">
+
+						<img
+							src="foto2.jpg"
+							alt="Habitación"
+						/>
+
+					</div>
+
+
+					<div class="gallery-item">
+
+						<img
+							src="hotel2.jpg"
+							alt="Hotel de lujo"
+						/>
+
+					</div>
+
+
+					<div class="gallery-item">
+
+						<img
+							src="pisina.avif"
+							alt="Piscina"
+						/>
+
+					</div>
+
+
+					<div class="gallery-item">
+
+						<img
+							src="playa comida.jpg"
+							alt="Restaurante"
+						/>
+
+					</div>
+
+
+					<div class="gallery-item">
+
+						<img
+							src="spa 3.avif"
+							alt="Spa"
+						/>
+
+					</div>
+
+
+				</div>
+
+			</section>
+
+
+			<!-- ==================================================
+			     VIDEO
+			================================================== -->
+
+			<section id="video" class="video-section">
+
+
+				<div class="section-title">
+
+					<span>
+						VIVE LA EXPERIENCIA
+					</span>
+
+					<h2>
+						Hotel Fernanda en video
+					</h2>
+
+				</div>
+
+
+				<div class="video-container">
+
+					<video
+						autoplay
+						muted
+						loop
+						playsinline
+						controls
+						poster="cabaña.jpg">
+
+						<source src="video.mp4" type="video/mp4">
+
+						Tu navegador no soporta video HTML5.
+
+					</video>
+
+				</div>
+
+			</section>
+
+
+		</div>
+
+	</div>
+
+
+	<!-- ==================================================
+	     EXPERIENCIA
+	================================================== -->
+
+	<section class="experience">
+
+		<h2>
+			La experiencia Fernanda
+		</h2>
+
+		<p>
+
+			No se trata solamente de hospedarse.
+			Se trata de disfrutar, descansar y crear
+			recuerdos que permanecerán contigo.
+
+		</p>
+
+		<a href="#reservaciones"
+		   class="gold-button">
+
+			DESCUBRIR HOTEL FERNANDA
+
+		</a>
+
+	</section>
+
+
+	<!-- ==================================================
+	     RESERVACIONES
+	================================================== -->
+
+	<section id="reservaciones"
+			 class="reservation">
+
+		<h2>
+			Haz tu reservación
+		</h2>
+
+		<p>
+
+			Prepárate para vivir una experiencia
+			de lujo, comodidad y tranquilidad.
+
+		</p>
+
+		<a href="#contacto"
+		   class="gold-button">
+
+			CONSULTAR DISPONIBILIDAD
+
+		</a>
+
+	</section>
+
+
+	<!-- ==================================================
+	     FOOTER
+	================================================== -->
+
+	<footer id="footer">
+
+		<div class="inner">
+
+
+			<section id="contacto">
+
+				<h2>
+					Contáctanos
+				</h2>
+
+				<p>
+					Estamos preparados para ayudarte
+					a planificar tu próxima experiencia.
+				</p>
+
+
+				<form method="post"
+					  action="#">
+
+					<div class="fields">
+
+
+						<div class="field half">
+
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Nombre"
+							/>
+
+						</div>
+
+
+						<div class="field half">
+
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Correo electrónico"
+							/>
+
+						</div>
+
+
+						<div class="field half">
+
+							<input
+								type="text"
+								name="phone"
+								id="phone"
+								placeholder="Teléfono"
+							/>
+
+						</div>
+
+
+						<div class="field half">
+
+							<input
+								type="text"
+								name="guests"
+								id="guests"
+								placeholder="Número de huéspedes"
+							/>
+
+						</div>
+
+
+						<div class="field">
+
+							<textarea
+								name="message"
+								id="message"
+								placeholder="Cuéntanos qué necesitas..."
+								rows="5"></textarea>
+
+						</div>
+
+
+					</div>
+
+
+					<ul class="actions">
+
+						<li>
+
+							<input
+								type="submit"
+								value="ENVIAR SOLICITUD"
+								class="primary"
+							/>
+
+						</li>
+
+					</ul>
+
+				</form>
+
+
+			</section>
+
+
+			<section>
+
+				<h2>
+					Hotel Fernanda
+				</h2>
+
+				<p>
+
+					Lujo, comodidad y atención
+					personalizada en cada detalle.
+
+				</p>
+
+
+				<ul class="icons">
+
+
+					<li>
+
+						<a href="#"
+						   class="icon brands style2 fa-facebook-f">
+
+							<span class="label">
+								Facebook
+							</span>
+
+						</a>
+
+					</li>
+
+
+					<li>
+
+						<a href="#"
+						   class="icon brands style2 fa-instagram">
+
+							<span class="label">
+								Instagram
+							</span>
+
+						</a>
+
+					</li>
+
+
+					<li>
+
+						<a href="#"
+						   class="icon brands style2 fa-whatsapp">
+
+							<span class="label">
+								WhatsApp
+							</span>
+
+						</a>
+
+					</li>
+
+
+					<li>
+
+						<a href="#"
+						   class="icon solid style2 fa-phone">
+
+							<span class="label">
+								Teléfono
+							</span>
+
+						</a>
+
+					</li>
+
+
+					<li>
+
+						<a href="#"
+						   class="icon solid style2 fa-envelope">
+
+							<span class="label">
+								Correo
+							</span>
+
+						</a>
+
+					</li>
+
+
+				</ul>
+
+
+			</section>
+
+
+			<ul class="copyright">
+
+				<li>
+					&copy; 2026 Hotel Fernanda.
+					Todos los derechos reservados.
+				</li>
+
+				<li>
+					Lujo & Elegancia
+				</li>
+
+			</ul>
+
+
+		</div>
+
+	</footer>
+
+
+</div>
+
+
+<!-- ==================================================
+     SCRIPTS
+================================================== -->
+
+<script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/browser.min.js"></script>
+
+<script src="assets/js/breakpoints.min.js"></script>
+
+<script src="assets/js/util.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+
+		var boton = document.getElementById('btn-ver-menu');
+		var seccion = document.getElementById('menu-comidas');
+
+		if (boton && seccion) {
+
+			boton.addEventListener('click', function (e) {
+
+				e.preventDefault();
+
+				seccion.classList.add('active');
+
+				setTimeout(function () {
+					seccion.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}, 50);
+
+			});
+
+		}
+
+	});
+</script>
+
+
+</body>
+
+</html>
